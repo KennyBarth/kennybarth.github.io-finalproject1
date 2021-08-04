@@ -1,0 +1,384 @@
+/*STYLESHEET FOR KENNETH BARTH'S PERSONAL SITE*/
+
+/*COLOR RULES*/
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:black;
+    color:seashell;
+}
+
+a:hover, #pethover:hover, #jsbutton:hover{
+    color:rgb(129, 238, 28);
+}
+#educationbody, #contactbody, .contactcontainer, #listcontainer, #jsbody{
+    background-color:rgb(92, 167, 197);
+}
+.navselect, .navselect > *, .members, .membertd, .listcol, .listcol > *, .contactheading, .grey{
+    background-color:rgb(109, 109, 114);
+}
+.titlecontainer > *, .straticon, .title1 > *, #jsbutton{
+    background-color:rgb(7, 7, 92);
+}
+/*FIRST HEADER SECTION*/
+body{
+    margin:1px 1px 0px 1px;
+}
+.titlecontainer{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background:rgb(7, 7, 92);
+    font-size: 36px;
+    color:black;
+    height:200px;
+    padding:0px;
+    margin: 0px;
+    border: 1px dashed seashell;
+}
+.titleicon{
+    padding:10px;
+}
+.nametop{
+    font-size:72px;
+    font-family: "Garamond", serif;
+    text-align: center;
+    text-shadow:3px 3px rgb(36, 3, 3);
+    margin: 10px;
+}
+.welcome{
+    font-size:24px;
+    text-align: center;
+    font-style: italic;
+    margin:10px;
+}
+@media only screen and (max-width : 1050px){
+    .nametop, .welcome{
+        margin: 0px;
+    }
+}
+@media only screen and (max-width : 768px){
+    .straticon{
+        display:none;
+    }
+}
+@media only screen and (max-width : 670px){
+    .titlecontainer{
+        height:150px;
+    }
+    .nametop{
+        font-size:48px;
+    }
+    .welcome{
+        font-size:16px;
+    }
+}
+/*FOOTER*/
+footer{
+    background-color: teal;
+    height:100px;
+    margin: 10px 0px 0px 0px;
+    padding:0px;
+}
+.footercontent{
+    text-align:center;
+    line-height:30px;
+    color:black;
+    background-color:teal;
+}
+@media only screen and (max-width : 768px){
+    footer{
+        height:60px;
+    }
+    .footercontent{
+        font-size:14px;
+        line-height:16px;
+    }
+}
+/*NAVIGATION MENU*/
+#contentpage{
+    display:flex;
+    flex-flow:row wrap;
+}
+#navcontainer{
+    display:flex;
+    flex-flow:column nowrap;
+    width:25%;
+    align-items: center;
+}
+#navcontainer > *{
+    border: 1px solid rgb(255, 255, 255);
+}
+.navselect{
+    height: 100px;
+    line-height:100px;
+    width:100%;
+    text-align:center;
+}
+.navselect > *{
+    color:black;
+    font-size: 22px;
+    font-family:Helvetica, Arial, sans-serif;
+}
+#mainphoto{
+    display:flex;
+    margin: 30px;
+    border: 1px solid white;
+}
+#welcomecontent{
+    color:seashell;
+    font-size: 18px;
+    text-align:center;
+    margin: 20px 100px 20px 100px;
+}
+#biogallery{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#kmainguitar{
+    /*height:600px;*/
+    width:600px;
+    flex-shrink:3;
+}
+@media only screen and (max-width : 1000px){
+    #navcontainer{
+        flex-flow:row wrap;
+        width:100%;
+    }
+    .navselect{
+        height:30px;
+        line-height:30px;
+    }
+    .navselect > *{
+        font-size:16px;
+    }
+    #mainphoto{
+        border:none;
+        align-items:center;
+    }
+    #kmainguitar{
+        width:70%;
+        margin:2% 15% 2% 15%;
+    }
+    #welcomecontent{
+        font-size:16px;
+    }
+}
+/*BIOGRAPHY PAGE RULES*/
+#biogallery > img{
+    margin: 30px;
+}
+#biotext{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.bioheading{
+    font-size:48px;
+    text-shadow:2px 2px steelblue;
+    text-align: center;
+}
+.biocontent{
+    font-size:22px;
+    line-height:40px;
+    margin: 20px 100px 20px 100px;
+}
+.biocontent > a{
+    color:turquoise;
+}
+
+@media only screen and (max-width : 1140px){
+    #mainphoto3{
+        display:none;
+    }
+}
+@media only screen and (max-width : 800px){
+    .photogone{
+        display:none;
+    }
+    .biocontent{
+        font-size:18px;
+        line-height:30px;
+        margin: 10px 50px 10px 50px;
+    }
+}
+/*MUSIC SECTION*/
+.centeredphotos{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#starlessgroup{
+    margin:20px 0px 20px 0px;
+}
+.vidcontainer{
+    display:flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content:center;
+}
+.vidcontainer > iframe{
+    border:1px solid seashell;
+}
+.members{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.membertd{
+    border:1px solid white;
+    color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:16px;
+    line-height:25px;
+    text-align: center;
+    padding:3px;
+    width:100%;
+}
+#mainmembertd{
+    font-weight:bold;
+    line-height:30px;
+}
+#social{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size:24px;
+    text-align:center;
+    padding:20px;
+}
+#medialinks{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+
+}
+@media only screen and (max-width : 1200px){
+    .vidcontainer{
+        flex-flow:column wrap;
+    }
+}
+/*MUSIC SECTION - IMAGE SPRITES*/
+#facebook, #instagram, #youtube{
+    background-image:url("images/ksocialsprite.png");
+    background-repeat:no-repeat;
+    height: 57px;
+    width:57px;
+    margin:20px;
+}
+#facebook{
+    background-position: -57px -57px;
+}
+#instagram{
+    background-position: -114px -57px;
+}
+#youtube{
+    background-position: -396px -57px;
+}
+/*WORK AND EDUCATION*/
+#listcontainer{
+    display:flex;
+    flex-flow:row wrap;
+    align-items:top;
+    justify-content: space-evenly;
+    margin:10px;
+}
+.listcol{
+    border: 2px groove blue;
+    width:35%;
+    margin:40px 10px 40px 10px;
+}
+.listcol > *{
+    padding:10px;
+    border: 1px dashed black;
+    color:black;
+}.listtitle{
+    text-align: center;
+    font-size:24px;
+    font-weight:bold;
+    line-height:48px;
+}
+
+@media only screen and (max-width : 768px){
+    .listtitle{
+        font-size:18px;
+    }
+    #listcontainer{
+        align-items:flex-start;
+    }
+    .listcol{
+        justify-content: space-around;
+        margin:auto;
+    }
+}
+/*PET PHOTO GALLERY*/
+.petcaption{
+    display:flex;
+    flex-flow: column wrap;
+    align-items:center;
+    justify-content:top;
+
+}
+.petcaption > .biocontent{
+    text-align:center;
+}
+.petcaption > img{
+    margin: 0px 20px 40px 20px;
+}
+#petspacetop{
+    margin-top:40px;
+}
+/*CONTACT*/
+.contactheading{
+    color: black;
+    margin:auto;
+    width: 60%;
+    border:1px solid black;
+    text-align:center;
+    padding:30px;
+    font-size:24px;
+    line-height:40px;
+    margin-top:20px;
+    text-shadow:1px 1px rgb(70, 10, 10);
+}
+.contactcontainer{
+    display:flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content:space-around;
+}
+.contactcontainer > img{
+    margin-top: 30px;
+    border: 1px solid blue;
+}
+#bigtea{
+    height:500px;
+    width:400px;
+}
+#jsbutton{
+    margin:20px 0px 10px 0px;
+    padding:10px;
+    font-size:24px;
+}
+@media only screen and (max-width : 768px){
+    .contactheading{
+        padding:15px;
+        font-size:16px;
+        text-shadow:none;
+    }
+    .contactcontainer{
+        flex-flow:column wrap;
+    }
+    #bigtea{
+        height:250px;
+        width:200px;
+    }
+    .listelement, .grey{
+        font-size:12px;
+        margin:0px;
+    }
+}
